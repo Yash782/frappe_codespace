@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-28 23:28:37.457272",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bank_details_section",
+  "bank_name",
+  "address",
+  "kyc_upload",
+  "micr_code",
+  "ifsc_code",
+  "number_of_accounts",
+  "rate_card",
+  "nda_document",
+  "master_agreement"
+ ],
+ "fields": [
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "kyc_upload",
+   "fieldtype": "Attach",
+   "label": "KYC Upload"
+  },
+  {
+   "fieldname": "micr_code",
+   "fieldtype": "Data",
+   "label": "MICR Code"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "number_of_accounts",
+   "fieldtype": "Int",
+   "label": "Number of Accounts"
+  },
+  {
+   "fieldname": "rate_card",
+   "fieldtype": "Int",
+   "label": "Rate Card"
+  },
+  {
+   "fieldname": "nda_document",
+   "fieldtype": "Attach",
+   "label": "NDA Document"
+  },
+  {
+   "fieldname": "master_agreement",
+   "fieldtype": "Attach",
+   "label": "Master Agreement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-29 11:17:01.519204",
+ "modified_by": "Administrator",
+ "module": "Ne5",
+ "name": "Bank Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
