@@ -1,0 +1,49 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<style>
+	/* CSS to style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+</style>
+<table>
+    <tr>
+        <th>Bank Name</th>
+        <td>{{ (doc.title or doc.name) |e }}</td>
+    </tr>
+    <tr>
+        <th>Address</th>
+        <td>{{ doc.address |e }}</td>
+    </tr>
+    <tr>
+        <th>MICR Code</th>
+        <td>{{ doc.micr_code }}</td>
+    </tr>
+    <tr>
+        <th>IFSC Code</th>
+        <td>{{ doc.ifsc_code |e }}</td>
+    </tr>
+    <tr>
+        <th>Number of Accounts</th>
+        <td>{{ doc.number_of_accounts |e }}</td>
+    </tr>
+</table>
+{% endblock page_content %}
+<!-- this is a sample default web page template -->

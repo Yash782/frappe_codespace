@@ -1,0 +1,27 @@
+<!-- Table to display details -->
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+	<table style="table-layout: fixed; width: 100%">
+		<tr style="cursor: pointer" onclick="window.location.href = '/{{ doc.route |e }}'">
+			<td style="width: 20%; text-align: left">{{ (doc.title or doc.name) |e }}</td>
+			<td style="width: 40%; text-align: left">{{ doc.address |e }}</td>
+			<td style="width: 10%; text-align: center">{{ doc.micr_code }}</td>
+			<td style="width: 10%; text-align: center">{{ doc.ifsc_code |e }}</td>
+			<td style="width: 20%; text-align: right">{{ doc.number_of_accounts |e }}</td>
+		</tr>
+	</table>
+</body>

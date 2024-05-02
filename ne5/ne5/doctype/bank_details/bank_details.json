@@ -10,11 +10,14 @@
   "address",
   "kyc_upload",
   "micr_code",
+  "column_break_gage",
   "ifsc_code",
   "number_of_accounts",
   "rate_card",
   "nda_document",
-  "master_agreement"
+  "master_agreement",
+  "published",
+  "route"
  ],
  "fields": [
   {
@@ -66,11 +69,28 @@
    "fieldname": "master_agreement",
    "fieldtype": "Attach",
    "label": "Master Agreement"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "column_break_gage",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2024-04-29 11:17:01.519204",
+ "modified": "2024-05-02 14:56:57.746720",
  "modified_by": "Administrator",
  "module": "Ne5",
  "name": "Bank Details",
@@ -89,6 +109,7 @@
    "write": 1
   }
  ],
+ "route": "banks",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
